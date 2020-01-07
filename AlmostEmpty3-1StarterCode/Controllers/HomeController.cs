@@ -6,7 +6,7 @@ namespace AlmostEmpty3_1StarterCode.Controllers
     {
         public IActionResult Index()
         {
-            ViewData["Title"] = "Index";
+            ViewData["Title"] = "Home";
             return View();
         }
         public IActionResult About()
