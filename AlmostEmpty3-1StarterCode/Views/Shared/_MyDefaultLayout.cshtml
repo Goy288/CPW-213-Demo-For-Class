@@ -1,0 +1,31 @@
+﻿@{
+    var yearsAgo = DateTime.Today.Year - 1987;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="~/Style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width" />
+        @*<title>@ViewBag.Joe</title>*@
+        <title>@ViewData["Title"]</title>
+    </head>
+    <body>
+        <h1>heeheehahah</h1>
+        <nav>
+            <a asp-controller="Home"
+               asp-action="Index">Index</a><br />
+            <a asp-controller="Home"
+               asp-action="About">About</a><br />
+        </nav>
+
+        <main>
+            @RenderBody()
+        </main>
+
+        <footer>
+            <p>@yearsAgo years ago.</p>
+        </footer>
+    </body>
+</html>
